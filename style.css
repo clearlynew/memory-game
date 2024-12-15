@@ -1,0 +1,111 @@
+
+body{
+    background-image: url("./images/bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    height: 1200px;
+    margin: 0;            /* Remove default margins */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    padding-right: 50px;
+    text-align: center;
+    padding-top:80px;
+    margin-bottom: 0;
+    font-family: Lemon;
+    font-size: 4.5rem;
+    margin-top: 0;
+}
+
+.container{
+    display: grid;
+    height: 100dvh;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: repeat(2,250px);
+    gap: 50px;
+    padding-top: 70px;
+    margin-top: 0;
+}
+
+.flex-container{
+    display: flex;
+    width: 800px;
+    height: 100vh;
+align-items: center;}
+
+.btn{
+    border-radius: 20%;
+    border: white 10px solid;
+    height: 250px;
+    width: 250px;
+}
+.dog{
+    background-color:rgb(250, 210, 197); }
+.tiger{
+    background-color: rgb(84, 116, 124);
+}
+.bear{
+    background-color: rgb(130, 66, 98);
+}
+.deer{
+    background-color: rgb(218, 160, 180);
+}
+img{
+    width: 230px;
+}
+.flip-card {
+    background-color: transparent;
+    border-radius: 20%;
+    height: 250px;
+    width: 250px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card.hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+  p{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:white;
+    font-family: "Poppins", sans-serif;
+  }
